@@ -1,13 +1,123 @@
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../styles/fonts/ubuntu-v15-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    url("../styles/fonts/ubuntu-v15-latin_cyrillic-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+.Modal__container {
+  position: relative;
+  left: 0px;
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 35vw;
+  height: 100vw;
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.image-footer {
+  width: 100%;
+  height: 806.32px;
+  left: 0px;
+  top: 5165px;
+}
+
+/* .card{
+  width: 100%;
+} */
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: 39px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+.div-color {
+  background-color: #d3d3d3;
+}
+.icono {
+  width: 3vw;
+}
+.content {
+  width: 30%;
+  float: left;
+  padding: 2vw;
+}
+#div1 {
+  background: url(../img/div1.jpeg);
+  padding: 12.3%;
+  background-position: center;
+  background-size: cover;
+}
+#div2 {
+  background: url(../img/div2.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 12.3%;
+}
+.h2 {
+  padding: 1vw;
+  color: #ca2f2f;
+}
+#form {
+  background: #ff00d4;
+  padding: 2vw;
+}
+.margen {
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+.bloques {
+  margin: 5vw 0 5vw 0;
+}
+.regalo {
+  width: 20vw;
+}
+.boton {
+  justify-content: center;
+}
+.boton_not {
+  text-decoration: none;
+  color: #ffffff;
+}
+.boton_not:hover {
+  color: #ffffff;
+}
+
+.ItemCarrito__avatar {
+  width: 115px;
+  height: 115px;
+}
+.CarritoSubtotal {
+  background-color: #d3d3d3;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-items-container {
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }

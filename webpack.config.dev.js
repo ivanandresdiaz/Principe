@@ -40,7 +40,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg)$/,
+        test: /\.(png|svg|jpg|jpeg)$/,
         type: 'asset/resource',
       },
       {
@@ -77,6 +77,7 @@ module.exports = {
     }),
   ],
   devServer: {
+    historyApiFallback: true,
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3006,
